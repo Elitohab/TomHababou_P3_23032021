@@ -30,12 +30,61 @@ header h1 {
     font-size: 18px;
     color: #4b4b4b;
   }
-  header .return-home:hover {
-    animation: return-rotation 500ms;
-  }
   /* Résolution minimale : 425px */
 @media (min-width: 425px) {
     header .return-home {
       top: 3%;
+    }
+  }
+  /* Résolution minimale : 720px */
+@media (min-width: 720px) {
+    header .return-home {
+      top: 4%;
+      font-size: 25px;
+    }
+  }
+  /* Résolution minimale : 768px */
+@media (min-width: 768px) {
+    header {
+      display: block;
+      z-index: 0;
+      height: 5%;
+      box-shadow: 3px 4px 5px 1px #dfdfdf;
+      transition: ease 0.3s;
+      background-color: white;
+    }
+    header h1 {
+      font-family: "Shrikhand";
+      font-size: 55px;
+      margin: auto;
+    }
+    header .return-home {
+      top: 5%;
+      font-size: 30px;
+    }
+  }
+  /* Résolution minimale : 1024px */
+  @media (min-width: 1024px) {
+    header .return-home {
+      top: 6%;
+    }
+  }
+  /* Résolution minimale : 1280px */
+  @media (min-width: 1280px) {
+    header .return-home {
+      top: 7%;
+    }
+  }
+  /* Résolution minimale : 1440px */
+  @media (min-width: 1440px) {
+    header .return-home {
+      top: 8%;
+    }
+  }
+  /* Résolution minimale : 1920px */
+  @media (min-width: 1920px) {
+    header .return-home {
+      top: 8%;
+      font-size: 35px;
     }
   }

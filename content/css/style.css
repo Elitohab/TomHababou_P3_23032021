@@ -225,3 +225,17 @@ header h1 {
       font-size: 40px;
     }
   }
+  .underlined-text {
+    padding-bottom: 5px;
+    background-color: transparent;
+    border-bottom: 3px solid #99e2d0;
+  }
+  .loading-screen {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  }
+  

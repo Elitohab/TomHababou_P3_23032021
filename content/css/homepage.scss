@@ -1,18 +1,5 @@
 /* Code spécifique à la page d'accueil */
-#__location {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-right: 35px;
-  background-color: rgb(230, 230, 230);
-  .__locationtitle {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: rgba(30, 30, 30, 0.8);
-    padding: 0.2rem;
-    margin-left: 5px;
-  }
-}
+
 
 #choice {
   display: flex;

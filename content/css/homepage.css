@@ -1,28 +1,5 @@
 @charset "UTF-8";
 /* Code spécifique à la page d'accueil */
-#__location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 35px;
-  background-color: #e6e6e6;
-}
-
-#__location .__locationtitle {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: rgba(30, 30, 30, 0.8);
-  padding: 0.2rem;
-  margin-left: 5px;
-}
-
 #choice {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -8,4 +8,6 @@
     box-shadow: 4px 5px 6px 2px rgb(153, 153, 153);
     transition: ease 0.3s;
   }
-  
+  @mixin title-style {
+    margin: 15% 5% 2%;
+  }

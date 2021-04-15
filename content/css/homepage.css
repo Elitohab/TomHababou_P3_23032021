@@ -1,5 +1,28 @@
 @charset "UTF-8";
 /* Code spécifique à la page d'accueil */
+#__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 35px;
+  background-color: #e6e6e6;
+}
+
+#__location .__locationtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.8);
+  padding: 0.2rem;
+  margin-left: 5px;
+}
+
 #choice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,5 +63,72 @@
 
 #__operation .__operationtitle {
   margin: 15% 5% 2%;
+}
+
+#__operation {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20%;
+}
+
+#__operation .__operationtitle {
+  margin: 15% 5% 2%;
+}
+
+#__operation .__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5% 5% 2% 0%;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 4px 5px 1px #dfdfdf;
+          box-shadow: 3px 4px 5px 1px #dfdfdf;
+  margin: 8%;
+  margin-bottom: 2%;
+  background-color: whitesmoke;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+
+#__operation .__action:hover {
+  background-color: #f2eafb;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+
+#__operation .__action:hover > .__actionicon {
+  color: #9356dc;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+
+#__operation .__action .__actionnumber {
+  color: white;
+  background-color: #9356dc;
+  padding: 5px 9px;
+  margin: 5% 0% 5% -5%;
+  border-radius: 50%;
+}
+
+#__operation .__action .__actionicon {
+  color: #646464;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+#__operation .__action .__actiontext {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=homepage.css.map */

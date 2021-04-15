@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* Code spécifique à la page d'accueil */
+#choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15% 5%;
+  background-color: whitesmoke;
+}
+
+#choice .purpose {
+  padding: 0% 5%;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#choice p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0%;
+}
+
+#__operation {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20%;
+}
+
+#__operation .__operationtitle {
+  margin: 15% 5% 2%;
+}
+/*# sourceMappingURL=homepage.css.map */

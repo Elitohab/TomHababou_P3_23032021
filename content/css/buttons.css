@@ -1,0 +1,63 @@
+a.__button {
+  display: inline;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  padding: 15px 6%;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+a.__button:hover {
+  background-image: linear-gradient(170deg, #fface8, #ae80e5);
+}
+
+a.__orderbutton {
+  display: block;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  padding: 15px 11%;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+a.__orderbutton:hover {
+  background-image: linear-gradient(170deg, #fface8, #ae80e5);
+}
+
+@media (min-width: 425px) {
+  a.__button {
+    padding: 15px 18px;
+  }
+}
+
+@media (min-width: 640px) {
+  a.__button {
+    font-size: 23px;
+    padding: 19px 27px;
+  }
+}
+
+@media (min-width: 720px) {
+  a.__button {
+    font-size: 23px;
+    padding: 18px 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  a.__button {
+    font-size: 18px;
+    padding: 18px 25px;
+  }
+}
+/*# sourceMappingURL=buttons.css.map */

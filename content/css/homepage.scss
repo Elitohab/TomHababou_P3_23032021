@@ -1,0 +1,32 @@
+/* Code spécifique à la page d'accueil */
+
+
+#choice {
+  display: flex;
+  flex-direction: column;
+  padding: 15% 5%;
+  background-color: whitesmoke;
+  .purpose {
+  padding: 0% 5%;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+
+  p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0%;
+  }
+}
+
+#__operation{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20%;
+  .__operationtitle{
+  margin: 15% 5% 2%;
+  }
+}

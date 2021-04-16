@@ -266,75 +266,31 @@ a {
   border-bottom: 3px solid #99e2d0;
 }
 
-/* Keyframes de l'animation de la rotation de la checkbox (page menus) */
-@-webkit-keyframes checkbox-rotatein {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes checkbox-rotatein {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-/* Keyframes de l'animation de la rotation du bouton retour (page menus) */
-@-webkit-keyframes return-rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes return-rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 /* Code spécifique à la page d'accueil */
+#__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 35px;
+  background-color: #e6e6e6;
+}
+
+#__location .__locationtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.8);
+  padding: 0.2rem;
+  margin-left: 5px;
+}
+
 #choice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,6 +400,187 @@ a {
   margin-left: 20px;
 }
 
+#__restaurantschoice {
+  background-color: whitesmoke;
+  padding-bottom: 15%;
+}
+
+#__restaurantschoice .__restaurantstitle {
+  margin: 15% 5% 2%;
+  padding: 15% 0% 5%;
+}
+
+#__restaurantschoice .__restaurantblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  margin-bottom: 5%;
+  -webkit-box-shadow: 3px 4px 5px 1px #dfdfdf;
+          box-shadow: 3px 4px 5px 1px #dfdfdf;
+  width: 90vw;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-animation: progressive-spawn 2000ms 5s both;
+          animation: progressive-spawn 2000ms 5s both;
+}
+
+#__restaurantschoice .__restaurantblock img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90vw;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* Positionnement des images des restaurants */
+.__imagejay {
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+.__imagestil {
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
+}
+
+.__imagetoa {
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+.__imagelouis {
+  -o-object-position: 50% bottom;
+     object-position: 50% bottom;
+}
+
+.__restaurantnew {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99e2d0;
+  color: green;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 0px;
+  margin: 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.__restaurantnew p {
+  padding: 0px 10px;
+  margin: 5px;
+  font-weight: 700;
+}
+
+.__restaurantdetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0% 5%;
+  color: black;
+}
+
+.__restaurantdetails div {
+  position: relative;
+}
+
+.__restaurantdetails div h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.__restaurantdetails div p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 5px;
+}
+
+.heart {
+  position: absolute;
+}
+
+.heart :nth-child(1) {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 100;
+  left: 220px;
+  top: -10px;
+  opacity: 1;
+  -webkit-transition: ease 100ms;
+  transition: ease 100ms;
+}
+
+.heart :nth-child(1):hover {
+  opacity: 0;
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+.heart :nth-child(2) {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 800;
+  left: 220px;
+  top: -10px;
+  color: #9356dc;
+  background: linear-gradient(225deg, #9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.heart :nth-child(2):hover {
+  opacity: 1;
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+/* Style des blocs montrant les étapes de sélection */
+#__operation {
+  margin-bottom: 15%;
+}
+
+#__operation .__action {
+  padding: 2% 2% 2% 0%;
+  margin-bottom: 1%;
+}
+
+#__operation .__action .__actionicon {
+  color: #646464;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#__operation .__action .__actiontext {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .menu .endroit {
   background-image: url("../../content/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
@@ -482,6 +619,7 @@ a {
   font-size: 25px;
   font-weight: 200;
 }
+
 .restaurant-first i {
   margin: 5%;
   padding-top: 15px;

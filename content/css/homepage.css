@@ -252,8 +252,6 @@
   position: absolute;
   font-size: 25px;
   font-weight: 100;
-  left: 220px;
-  top: -10px;
   opacity: 1;
   -webkit-transition: ease 100ms;
   transition: ease 100ms;
@@ -269,20 +267,14 @@
   position: absolute;
   font-size: 25px;
   font-weight: 800;
-  left: 220px;
-  top: -10px;
   color: #9356dc;
-  /* $primary-color; */
-  background: linear-gradient(225deg, #9356dc, #ff79da);
-  /* $primary-color, $secondary-color */
-  -webkit-text-fill-color: transparent;
   opacity: 0;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
 .heart :nth-child(2):hover {
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: ease 500ms;
   transition: ease 500ms;
 }
@@ -331,16 +323,6 @@
 
 #__restaurantschoice .__restaurantcontent img {
   height: 175px;
-}
-
-#__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(1) {
-  left: 270px;
-  top: -10px;
-}
-
-#__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(2) {
-  left: 270px;
-  top: -10px;
 }
 
 @media (min-width: 425px) {
@@ -446,16 +428,6 @@
   #__restaurantschoice .__restaurantcontent .__detailsrestaurant div p {
     font-size: 30px;
   }
-  #__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(1) {
-    left: 480px;
-    top: -10px;
-    font-size: 45px;
-  }
-  #__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(2) {
-    left: 480px;
-    top: -10px;
-    font-size: 45px;
-  }
 }
 
 /* Résolution horizontale de minimum 720px */
@@ -514,16 +486,6 @@
   }
   #__restaurantschoice .__restaurantcontent .__detailsrestaurant div p {
     font-size: 30px;
-  }
-  #__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(1) {
-    left: 480px;
-    top: -10px;
-    font-size: 45px;
-  }
-  #__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(2) {
-    left: 480px;
-    top: -10px;
-    font-size: 45px;
   }
   /* Format tablette */
   /* Résolution minimale de 768px */
@@ -698,14 +660,6 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 5px;
-  }
-  .restaurant-details .heart :nth-child(1) {
-    left: 31.5vw;
-    top: -10px;
-  }
-  .restaurant-details .heart :nth-child(2) {
-    left: 31.5vw;
-    top: -10px;
   }
   /* Format d'écran de taille minimale de 1025px */
 }
@@ -897,14 +851,6 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 5px;
-  }
-  #__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(1) {
-    left: 15vw;
-    top: -10px;
-  }
-  #__restaurantschoice .__restaurantcontent .__detailsrestaurant .heart :nth-child(2) {
-    left: 15vw;
-    top: -10px;
   }
 }
 /*# sourceMappingURL=homepage.css.map */

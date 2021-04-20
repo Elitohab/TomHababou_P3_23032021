@@ -11,8 +11,8 @@
     color: rgba(30, 30, 30, 0.8);
     padding: 0.2rem;
     margin-left: 5px;
-  }
-  }
+   }
+}
 #choice {
   display: flex;
   flex-direction: column;
@@ -173,8 +173,6 @@
     position: absolute;
     font-size: 25px;
     font-weight: 100;
-    left: 220px;
-    top: -10px;
     opacity: 1;
     transition: ease 100ms;
     &:hover {
@@ -182,23 +180,19 @@
       transition: ease 500ms;
     }
   }
-      :nth-child(2) {
-        position: absolute;
-        font-size: 25px;
-        font-weight: 800;
-        left: 220px;
-        top: -10px;
-        color: #9356dc; /* $primary-color; */
-        background: linear-gradient(225deg, #9356dc, #ff79da); /* $primary-color, $secondary-color */
-        -webkit-text-fill-color: transparent;
-        opacity: 0;
-        transition: all 500ms ease;
-        &:hover {
-          opacity: 1;
-          transition: ease 500ms;
-        }
-      } 
+  :nth-child(2) {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 800;
+    color: #9356dc;
+    opacity: 0;
+    transition: all 500ms ease;
+    &:hover {
+      opacity: 0;
+      transition: ease 500ms;
     }
+  }
+}
 
 /* Résolution minimale : 375px */
 @media (min-width: 375px) {
@@ -243,18 +237,6 @@
   .__restaurantcontent {
     img {
       height: 175px;
-    }
-    .__detailsrestaurant {
-      .heart {
-        :nth-child(1) {
-          left: 270px;
-          top: -10px;
-        }
-        :nth-child(2) {
-          left: 270px;
-          top: -10px;
-        }
-      }
     }
   }
 }
@@ -373,18 +355,6 @@
           padding-top: 10px;
           padding-bottom: 10px;
         }
-        .heart {
-          :nth-child(1) {
-            left: 480px;
-            top: -10px;
-            font-size: 45px;
-          }
-          :nth-child(2) {
-            left: 480px;
-            top: -10px;
-            font-size: 45px;
-          }
-        }
       }
     }
   }
@@ -458,18 +428,6 @@
         }
         padding-top: 10px;
         padding-bottom: 10px;
-      }
-      .heart {
-        :nth-child(1) {
-          left: 480px;
-          top: -10px;
-          font-size: 45px;
-        }
-        :nth-child(2) {
-          left: 480px;
-          top: -10px;
-          font-size: 45px;
-        }
       }
     }
   }
@@ -609,16 +567,6 @@
       line-height: 5px;
     }
   }
-  .heart {
-    :nth-child(1) {
-      left: 31.5vw;
-      top: -10px;
-    }
-    :nth-child(2) {
-      left: 31.5vw;
-      top: -10px;
-    }
-  }
 }
 /* Format d'écran de taille minimale de 1025px */
 @media (min-width: 1025px) {
@@ -755,24 +703,14 @@
         font-weight: 700;
         line-height: 15px;
 }
-     p {
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 5px;
-      }
-}
-      .heart {
-         :nth-child(1) {
-          left: 15vw;
-          top: -10px;
-          }
-         :nth-child(2) {
-          left: 15vw;
-          top: -10px;
+           p {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 5px;
+            }
           }
         }
       }
     }
   }
- }
 }

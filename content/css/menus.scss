@@ -20,3 +20,41 @@
     font-size: 25px;
     }
   }
+
+  .menu_type {
+    background-color: whitesmoke;
+    margin-top: 0%;
+    z-index: 200;
+    h2 {
+      font-weight: 100;
+      font-family: "Roboto Light", sans-serif;
+      font-size: 17px;
+      padding-top: 5%;
+      margin: 0% 5% 7% 4%;
+    }
+  }
+  .menu-block {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0% 5%;
+    height: fit-content;
+    width: 85vw;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: slide-up 1s both;
+    box-shadow: 3px 4px 5px 1px rgb(223, 223, 223);
+    transition: ease 0.3s;
+    h3 {
+      margin: 12px 19% 0px 0px;
+      margin-right: 19%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+    }
+  }

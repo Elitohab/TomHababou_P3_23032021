@@ -13,7 +13,7 @@ header {
     margin: auto;
 }
 /* Style du bouton retour */
-    .return-home {
+    .home-return {
     position: absolute;
     top: 2.5%;
     left: 7vw;
@@ -54,7 +54,7 @@ header {
         font-size: 55px;
         margin: auto;
       }
-      .return-home {
+      .home-return {
         top: 5%;
         font-size: 30px;
       }
@@ -63,7 +63,7 @@ header {
   /* Résolution minimale : 1024px */
 @media (min-width: 1024px) {
   header {
-    .return-home {
+    .home-return {
       top: 6%;
     }
   }
@@ -71,7 +71,7 @@ header {
 /* Résolution minimale : 1280px */
 @media (min-width: 1280px) {
   header {
-    .return-home {
+    .home-return {
       top: 7%;
     }
   }
@@ -80,7 +80,7 @@ header {
 
 @media (min-width: 1440px) {
   header {
-    .return-home {
+    .home-return {
       top: 8%;
     }
   }
@@ -89,7 +89,7 @@ header {
 /* Résolution minimale : 1920px */
 @media (min-width: 1920px) {
   header {
-    .return-home {
+    .home-return {
       top: 8%;
       font-size: 35px;
     }

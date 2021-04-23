@@ -18,7 +18,7 @@ header h1 {
   margin: auto;
 }
 
-header .return-home {
+header .home-return {
   position: absolute;
   top: 2.5%;
   left: 7vw;
@@ -26,7 +26,7 @@ header .return-home {
   color: #4b4b4b;
 }
 
-header .return-home:hover {
+header .home-return:hover {
   -webkit-animation: return-rotation 500ms;
           animation: return-rotation 500ms;
 }
@@ -61,7 +61,7 @@ header .return-home:hover {
     font-size: 55px;
     margin: auto;
   }
-  header .return-home {
+  header .home-return {
     top: 5%;
     font-size: 30px;
   }
@@ -69,28 +69,28 @@ header .return-home:hover {
 
 /* Résolution minimale : 1024px */
 @media (min-width: 1024px) {
-  header .return-home {
+  header .home-return {
     top: 6%;
   }
 }
 
 /* Résolution minimale : 1280px */
 @media (min-width: 1280px) {
-  header .return-home {
+  header .home-return {
     top: 7%;
   }
 }
 
 /* Résolution minimale : 1440px */
 @media (min-width: 1440px) {
-  header .return-home {
+  header .home-return {
     top: 8%;
   }
 }
 
 /* Résolution minimale : 1920px */
 @media (min-width: 1920px) {
-  header .return-home {
+  header .home-return {
     top: 8%;
     font-size: 35px;
   }

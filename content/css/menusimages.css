@@ -1,16 +1,16 @@
-.menu .endroit {
+.menu.fusain {
   background-image: url("../../content/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.menu .alangeaam {
+.menu.alangeaam {
   background-image: url("../../content/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
-.menu .fusain {
+.menu.endroit {
   background-image: url("../../content/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
-.menu .herisson {
+.menu.herisson {
   background-image: url("../../content/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
-/*# sourceMappingURL=menus-images.css.map */
+/*# sourceMappingURL=menusimages.css.map */

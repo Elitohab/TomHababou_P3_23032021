@@ -1,7 +1,14 @@
 
   .menu {
+    margin: 0%;
+    width: 100vw;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vw;
     background-color: whitesmoke;
     padding-top: 55%;
+    height: fit-content;
+    margin-bottom: 0%;
   }
   .restaurant-first{
     background-color: whitesmoke;
@@ -36,7 +43,6 @@
       padding-top: 5%;
       margin: 0% 5% 7% 4%;
     }
-  }
   .menu-block {
     position: relative;
     display: flex;
@@ -61,7 +67,6 @@
       text-overflow: ellipsis;
       font-size: 14px;
     }
-  }
   .description-price {
     display: flex;
     justify-content: space-between;
@@ -97,12 +102,15 @@
     right: 0;
     background-color: #99e2d0; 
     color: white;
+    overflow: hidden;
     width: 0;
     height: 100%;
     transition: 0.5s ease;
     font-size: 15px;
     border-radius: 0px 15px 15px 0px;
+    }
   }
+}
   .order-button-block {
     display: flex;
     justify-self: center;

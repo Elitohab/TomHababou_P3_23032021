@@ -32,7 +32,7 @@
     }
   }
 
-  .menu_type {
+  .menu-type {
     background-color: whitesmoke;
     margin-top: 0%;
     z-index: 200;
@@ -119,7 +119,7 @@
     background-color: whitesmoke;
   }
   @media (min-width: 720px) and (max-width: 767px) {
-    .menu_type {
+    .menu-type {
       h2 {
         font-size: 23px;
       }
@@ -157,7 +157,7 @@
       margin: auto;
       z-index: -1;
     }
-    .menu_type{
+    .menu-type{
       margin: auto;
       h2 {
         margin-top: 0px;
@@ -168,7 +168,7 @@
     }
   }
   @media (min-width: 1025px) {
-    .menu_type {
+    .menu-type {
       .menu-block {
         width: 25vw;
       }

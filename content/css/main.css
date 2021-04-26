@@ -660,6 +660,7 @@ a {
   top: -10px;
   color: #9356dc;
   background: linear-gradient(225deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   -webkit-transition: all 500ms ease;
@@ -1335,13 +1336,13 @@ a {
   font-size: 25px;
 }
 
-.menu_type {
+.menu-type {
   background-color: whitesmoke;
   margin-top: 0%;
   z-index: 200;
 }
 
-.menu_type h2 {
+.menu-type h2 {
   font-weight: 100;
   font-family: "Roboto Light", sans-serif;
   font-size: 17px;
@@ -1349,7 +1350,7 @@ a {
   margin: 0% 5% 7% 4%;
 }
 
-.menu_type .menu-block {
+.menu-type .menu-block {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1378,7 +1379,7 @@ a {
   transition: ease 0.3s;
 }
 
-.menu_type .menu-block h3 {
+.menu-type .menu-block h3 {
   margin: 12px 19% 0px 0px;
   margin-right: 19%;
   white-space: nowrap;
@@ -1387,7 +1388,7 @@ a {
   font-size: 14px;
 }
 
-.menu_type .menu-block .description-price {
+.menu-type .menu-block .description-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1402,7 +1403,7 @@ a {
   line-height: 5px;
 }
 
-.menu_type .menu-block .description-price :nth-child(1) {
+.menu-type .menu-block .description-price :nth-child(1) {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1413,14 +1414,14 @@ a {
   margin: 0px;
 }
 
-.menu_type .menu-block .description-price :nth-child(2) {
+.menu-type .menu-block .description-price :nth-child(2) {
   z-index: 3;
   position: relative;
   line-height: 15px;
   margin-top: 5px;
 }
 
-.menu_type .menu-block .checkbox {
+.menu-type .menu-block .checkbox {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1456,13 +1457,13 @@ a {
 }
 
 @media (min-width: 720px) and (max-width: 767px) {
-  .menu_type h2 {
+  .menu-type h2 {
     font-size: 23px;
   }
-  .menu_type .menu-block h3 {
+  .menu-type .menu-block h3 {
     font-size: 20px;
   }
-  .menu_type .menu-block .description-price {
+  .menu-type .menu-block .description-price {
     font-size: 16px;
   }
 }
@@ -1497,19 +1498,19 @@ a {
     margin: auto;
     z-index: -1;
   }
-  .menu_type {
+  .menu-type {
     margin: auto;
   }
-  .menu_type h2 {
+  .menu-type h2 {
     margin-top: 0px;
   }
-  .menu_type .menu-block {
+  .menu-type .menu-block {
     width: 35vw;
   }
 }
 
 @media (min-width: 1025px) {
-  .menu_type .menu-block {
+  .menu-type .menu-block {
     width: 25vw;
   }
 }
@@ -1556,21 +1557,71 @@ a {
 }
 
 /* Animation de la sélection d'un plat sur la page des menus */
-.menu_type .menu-block:hover .checkbox {
-  width: 48vw;
+.menu-type .menu-block:hover .checkbox {
+  width: 17vw;
   left: 83.9%;
 }
 
-.menu_type .menu-block:hover .description-price {
+.menu-type .menu-block:hover .description-price {
   width: 80%;
   -webkit-transition: ease 500ms;
   transition: ease 500ms;
 }
 
-.menu_type .menu-block:hover i {
+.menu-type .menu-block:hover i {
   -webkit-animation: checkbox-rotatein 0.5s ease;
           animation: checkbox-rotatein 0.5s ease;
   -webkit-transition: 50ms;
   transition: 50ms;
+}
+
+/* Résolution minimale : 375px */
+@media (min-width: 375px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 81%;
+  }
+}
+
+/* Résolution minimale : 425px */
+@media (min-width: 425px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 83%;
+  }
+}
+
+/* Résolution minimale : 720px */
+@media (min-width: 720px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 85%;
+  }
+}
+
+/* Résolution minimale : 768px - Format tablette*/
+@media (min-width: 768px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 80%;
+  }
+}
+
+/* Résolution minimale : 1024px - Format tablette*/
+@media (min-width: 1024px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 80%;
+  }
+}
+
+/* Résolution minimale : 1280px - Format tablette*/
+@media (min-width: 1280px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 78%;
+    right: 30%;
+  }
+}
+
+/* Résolution minimale : 1440px - Format tablette*/
+@media (min-width: 1440px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 78%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

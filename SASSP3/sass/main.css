@@ -1,4 +1,390 @@
 @charset "UTF-8";
+/* Variables des éléments graphiques du site */
+/* Animation variables */
+/* Variables des tailles */
+/* Mixins du site */
+/* Import des polices utilisées pour le site web _fonts.scss */
+/* Shrikhand */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+header {
+  display: block;
+  z-index: 0;
+  height: 5%;
+  -webkit-box-shadow: 3px 4px 5px 1px #dfdfdf;
+          box-shadow: 3px 4px 5px 1px #dfdfdf;
+  background-color: white;
+  /* Propriétés du titre du site */
+  /* Style du bouton retour */
+}
+
+header h1 {
+  font-family: "Shrikhand";
+  font-size: 35px;
+  text-align: center;
+  padding: 4% 2% 2% 2%;
+  margin: auto;
+}
+
+header .home-return {
+  position: absolute;
+  top: 2.5%;
+  left: 7vw;
+  font-size: 18px;
+  color: #4b4b4b;
+}
+
+header .home-return:hover {
+  -webkit-animation: return-rotation 500ms;
+          animation: return-rotation 500ms;
+}
+
+/* Résolution minimale : 425px */
+@media (min-width: 425px) {
+  header .return-home {
+    top: 3%;
+  }
+}
+
+/* Résolution minimale : 720px */
+@media (min-width: 720px) {
+  header .return-home {
+    top: 4%;
+    font-size: 25px;
+  }
+}
+
+/* Résolution minimale : 768px */
+@media (min-width: 768px) {
+  header {
+    display: block;
+    z-index: 0;
+    height: 5%;
+    -webkit-box-shadow: 3px 4px 5px 1px #dfdfdf;
+            box-shadow: 3px 4px 5px 1px #dfdfdf;
+    background-color: white;
+  }
+  header h1 {
+    font-family: "Shrikhand";
+    font-size: 55px;
+    margin: auto;
+  }
+  header .home-return {
+    top: 5%;
+    font-size: 30px;
+  }
+}
+
+/* Résolution minimale : 1024px */
+@media (min-width: 1024px) {
+  header .home-return {
+    top: 6%;
+  }
+}
+
+/* Résolution minimale : 1280px */
+@media (min-width: 1280px) {
+  header .home-return {
+    top: 7%;
+  }
+}
+
+/* Résolution minimale : 1440px */
+@media (min-width: 1440px) {
+  header .home-return {
+    top: 8%;
+  }
+}
+
+/* Résolution minimale : 1920px */
+@media (min-width: 1920px) {
+  header .home-return {
+    top: 8%;
+    font-size: 35px;
+  }
+}
+
+footer {
+  background-color: #3c3c3c;
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  width: 90vw;
+  margin: auto;
+  padding: 5% 0% 1%;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90vw;
+  font-size: 15px;
+  margin: auto;
+}
+
+footer div a {
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+footer div a:active {
+  background-color: transparent;
+}
+
+@media (min-width: 720px) and (max-width: 767px) {
+  footer {
+    padding-bottom: 35px;
+  }
+  footer h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  footer a {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+a.__button {
+  display: inline;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  padding: 15px 6%;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+a.__button:hover {
+  background-image: linear-gradient(170deg, #fface8, #ae80e5);
+}
+
+a.__orderbutton {
+  display: block;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  padding: 15px 11%;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+a.__orderbutton:hover {
+  background-image: linear-gradient(170deg, #fface8, #ae80e5);
+}
+
+@media (min-width: 425px) {
+  a.__button {
+    padding: 15px 18px;
+  }
+}
+
+@media (min-width: 640px) {
+  a.__button {
+    font-size: 23px;
+    padding: 19px 27px;
+  }
+}
+
+@media (min-width: 720px) {
+  a.__button {
+    font-size: 23px;
+    padding: 18px 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  a.__button {
+    font-size: 18px;
+    padding: 18px 25px;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 360px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 719px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.__underlinedtext {
+  padding-bottom: 5px;
+  background-color: transparent;
+  border-bottom: 3px solid #99e2d0;
+}
+
+/* Keyframes de l'animation de disparition de l'écran de chargement (page d'accueil) */
+@-webkit-keyframes loading-screen-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loading-screen-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/* Keyframes de l'animation du spinner de chargement (page d'accueil) */
+@-webkit-keyframes spinner-rotation {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  90% {
+    -webkit-transform: rotate(350deg);
+            transform: rotate(350deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spinner-rotation {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  90% {
+    -webkit-transform: rotate(350deg);
+            transform: rotate(350deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Keyframes de l'animation de la rotation de la checkbox (page menus) */
+@-webkit-keyframes checkbox-rotatein {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes checkbox-rotatein {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Keyframes de l'animation de la rotation du bouton retour (page menus) */
+@-webkit-keyframes return-rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes return-rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* Code spécifique à la page d'accueil */
 .__location {
   display: -webkit-box;
@@ -889,4 +1275,145 @@
     top: -10px;
   }
 }
-/*# sourceMappingURL=homepage.css.map */
+
+.menu.fusain {
+  background-image: url("../../content/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.menu.alangeaam {
+  background-image: url("../../content/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.menu.endroit {
+  background-image: url("../../content/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.menu.herisson {
+  background-image: url("../../content/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.menu.fusain {
+  background-image: url("../../content/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.menu.alangeaam {
+  background-image: url("../../content/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.menu.endroit {
+  background-image: url("../../content/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.menu.herisson {
+  background-image: url("../../content/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+/* Propriétés de l'écran de chargement (page d'accueil) */
+.loading-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 80;
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  -webkit-animation: loading-screen-anim 2000ms 1 both;
+          animation: loading-screen-anim 2000ms 1 both;
+}
+
+/* Propriétés du spinner de chargement (page d'accueil) */
+.spinner {
+  height: 10vw;
+  width: 10vw;
+  border: 5px solid #9356dc;
+  border-top-color: #ff79da;
+  border-radius: 100%;
+  -webkit-animation: spinner-rotation 0.7s infinite ease 0.25s;
+          animation: spinner-rotation 0.7s infinite ease 0.25s;
+}
+
+/* Propriété du logo de l'écran de chargement (page d'accueil) */
+.loading-logo {
+  font-family: "Shrikhand";
+}
+
+/* Animation de la sélection d'un plat sur la page des menus */
+.menu-type .menu-block:hover .checkbox {
+  width: 17vw;
+  left: 83.9%;
+}
+
+.menu-type .menu-block:hover .description-price {
+  width: 80%;
+  -webkit-transition: ease 500ms;
+  transition: ease 500ms;
+}
+
+.menu-type .menu-block:hover i {
+  -webkit-animation: checkbox-rotatein 0.5s ease;
+          animation: checkbox-rotatein 0.5s ease;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
+/* Résolution minimale : 375px */
+@media (min-width: 375px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 81%;
+  }
+}
+
+/* Résolution minimale : 425px */
+@media (min-width: 425px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 83%;
+  }
+}
+
+/* Résolution minimale : 720px */
+@media (min-width: 720px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 85%;
+  }
+}
+
+/* Résolution minimale : 768px - Format tablette*/
+@media (min-width: 768px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 80%;
+  }
+}
+
+/* Résolution minimale : 1024px - Format tablette*/
+@media (min-width: 1024px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 80%;
+  }
+}
+
+/* Résolution minimale : 1280px - Format tablette*/
+@media (min-width: 1280px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 78%;
+  }
+}
+
+/* Résolution minimale : 1440px - Format tablette*/
+@media (min-width: 1440px) {
+  .menu-type .menu-block:hover .checkbox {
+    left: 78%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

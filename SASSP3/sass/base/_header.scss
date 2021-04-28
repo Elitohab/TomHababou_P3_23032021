@@ -27,7 +27,7 @@ header {
 /* Résolution minimale : 425px */
 @media (min-width: 425px) {
     header {
-      .return-home {
+      .home-return {
         top: 3%;
       }
     }
@@ -35,7 +35,7 @@ header {
   /* Résolution minimale : 720px */
 @media (min-width: 720px) {
     header {
-      .return-home {
+      .home-return{
         top: 4%;
         font-size: 25px;
       }

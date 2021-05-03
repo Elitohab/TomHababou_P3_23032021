@@ -57,8 +57,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     animation: slide-up 1s both;
-    box-shadow: 3px 4px 5px 1px rgb(223, 223, 223);
-    transition: ease 0.3s;
+    @include elements-shadow;
     h3 {
       margin: 12px 19% 0px 0px;
       margin-right: 19%;
@@ -100,7 +99,7 @@
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: #99e2d0; 
+    background-color: $terciary-color; 
     color: white;
     overflow: hidden;
     width: 0;

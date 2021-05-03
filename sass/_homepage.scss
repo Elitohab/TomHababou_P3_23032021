@@ -43,15 +43,15 @@
     flex-direction: column;
     margin-bottom: 20%;
   .__operationtitle {
-    margin: 15% 5% 2%; /* ** @include title-style ** */
+    margin: 15% 5% 2%;
 }
   .__action {
     display: flex;
     flex-direction: row;
     padding: 5% 5% 2% 0%;
     border-radius: 20px;
-    box-shadow: 3px 4px 5px 1px #dfdfdf;
-    transition: ease 0.3s; /* ** @include elements-shadow ** */
+    box-shadow: 3px 4px 5px 1px rgb(223, 223, 223);
+    transition: ease 0.3s;
     margin: 8%;
     margin-bottom: 2%;
     background-color: whitesmoke;
@@ -63,12 +63,12 @@
 }
 
   &:hover > .__actionicon {
-    color: #9356dc; /* ** $primary-color ** */
+    color: $primary-color;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
 }
   .__actionnumber {
     color: white;
-    background-color: #9356dc; /* ** $primary-color ** */
+    background-color: $primary-color;
     padding: 5px 9px;
     margin: 5% 0% 5% -5%;
     border-radius: 50%;
@@ -93,7 +93,7 @@
     background-color: whitesmoke;
     padding-bottom: 15%;
   .__restaurantstitle {
-    margin: 15% 5% 2%; /* ** @include title-style ** */
+    margin: 15% 5% 2%;
     padding: 15% 0% 5%;
 }
   .restaurant-content {
@@ -102,8 +102,8 @@
     flex-direction: column;
     margin: auto;
     margin-bottom: 5%;
-    box-shadow: 3px 4px 5px 1px#dfdfdf;
-    transition: ease 0.3s;  /* ** @include element-shadow ** */
+    box-shadow: 3px 4px 5px 1px rgb(223, 223, 223);
+    transition: ease 0.3s;
     width: 90vw;
     background-color: white;
     border-radius: 15px;
@@ -131,7 +131,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #99e2d0; /* $terciary-color */
+    background-color: $terciary-color;
     color: green;
     font-size: 15px;
     border-radius: 3px;
@@ -186,8 +186,8 @@
       font-weight: 800;
       left: 220px;
       top: -10px;
-      color: #9356dc;
-      background: linear-gradient(225deg, #9356dc, #ff79da);
+      color: $primary-color;
+      background: linear-gradient(225deg, $primary-color, $secondary-color);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       opacity: 0;
@@ -484,8 +484,8 @@
 /* Résolution minimale de 768px */
 @media (min-width: 768px) {
   .spinner {
-    border: 15px solid #9356dc;
-    border-top-color: #ff79da;
+    border: 15px solid $primary-color ;
+    border-top-color: $secondary-color;
   }
   .loading-logo {
     font-size: 35px;
@@ -554,13 +554,13 @@
       margin-bottom: 5vw;
       box-shadow: 3px 4px 5px 1px rgb(223, 223, 223);
       transition: ease 0.3s;  /* @include elements-shadow */
-      width: 40vw; /* $restaurant-image-size-tab */
+      width: $restaurant-image-size-tab;
       background-color: white;
       border-radius: 15px;
       animation: progressive-spawn 2000ms 5s both;
       img {
         object-fit: cover;
-        width: 40vw;  /* $restaurant-image-size-tab */
+        width: $restaurant-image-size-tab;
         height: 150px;
         border-radius: 15px 15px 0px 0px;
       }
@@ -581,7 +581,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: #99e2d0;  /* $terciary-color */
+        background-color: $terciary-color;
         color: green;
         font-size: 15px;
         border-radius: 3px;
@@ -636,8 +636,8 @@
   }
 
   .spinner {
-    border: 25px solid #9356dc;
-    border-top-color: #ff79da;
+    border: 25px solid $primary-color;
+    border-top-color: $secondary-color;
   }
   .loading-logo {
     font-size: 45px;
@@ -709,7 +709,7 @@
       margin-bottom: 0vw;
       box-shadow: 3px 4px 5px 1px rgb(223, 223, 223);
       transition: ease 0.3s; /* @include elements-shadow */
-      width: 20vw; /* $restaurant-image-size-desktop */
+      width: $restaurant-image-size-desktop;
       background-color: white;
       border-radius: 15px;
       &:hover {
@@ -718,7 +718,7 @@
       }
       img {
         object-fit: cover;
-        width: 20vw; /* $restaurant-image-size-desktop */
+        width: $restaurant-image-size-desktop;
         height: 20vw * 1.5/3;
         border-radius: 15px 15px 0px 0px;
       }
@@ -739,7 +739,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: #99e2d0;
+        background-color: $terciary-color;
         color: green;
         font-size: 15px;
         border-radius: 3px;

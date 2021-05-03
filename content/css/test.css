@@ -173,7 +173,7 @@ a.__button {
 }
 
 a.__button:hover {
-  background-image: linear-gradient(170deg, #fface8, #83e580);
+  background-image: linear-gradient(170deg, #fface8, #ae80e5);
 }
 
 a.__orderbutton {
@@ -1400,4 +1400,4 @@ a {
     left: 78%;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=test.css.map */

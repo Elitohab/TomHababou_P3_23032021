@@ -11,12 +11,14 @@ a.__button {
     border-radius: 50px;
     margin: auto;
     margin-top: 15px;
+    @include elements-shadow;
     &:hover {
-      background-image: linear-gradient(170deg, $secondary-color, $terciary-color);
+    @include elements-shadow-hover;
+    background-image: linear-gradient(170deg, lighten($secondary-color, 10%), lighten($primary-color, 10%));
     }
   }
   
-  a.__orderbutton {
+  a.order-button {
     display: block;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -29,8 +31,10 @@ a.__button {
     border-radius: 50px;
     margin: auto;
     margin-top: 15px;
+    @include elements-shadow;
     &:hover {
-      background-image: linear-gradient(170deg, $secondary-color, $primary-color);
+    @include elements-shadow-hover;
+    background-image: linear-gradient(170deg, lighten($secondary-color, 10%), lighten($primary-color, 10%));
     }
   }
   

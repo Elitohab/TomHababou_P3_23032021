@@ -1,5 +1,5 @@
 /* Code spécifique à la page d'accueil */
-  .__location {
+  #location {
     display: flex;
     z-index: 10;
     flex-direction: row;
@@ -10,7 +10,7 @@
     font-weight: 600;
     color: rgba(30, 30, 30, 0.8);
     padding: 0.2rem;
-    margin-left: 5px;
+    margin-left: 50px;
    }
 }
   #choice {
@@ -39,6 +39,7 @@
 /* Style des blocs montrant les étapes de sélection */
   #operation{
     background-color: white;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     margin-bottom: 20%;
@@ -201,10 +202,18 @@
     }
   }
 }
-
+/* Résolution minimale : 320px */
+@media (min-width: 320px) {
+  #location {
+    padding-right: 45px;
+    .__locationtitle{
+      font-size: 18px;
+    }
+  }
+}
 /* Résolution minimale : 375px */
 @media (min-width: 375px) {
-  #__location {
+  #location {
     padding-right: 50px;
     .__locationtitle{
       font-size: 18px;
@@ -241,6 +250,7 @@
     }
   }
 }
+
   #restaurants-choice {
   .restaurant-content {
      img {
@@ -262,7 +272,7 @@
   }
 }
 @media (min-width: 425px) {
-  #__location {
+  #location {
     padding-right: 65px;
   }
 
@@ -305,9 +315,80 @@
       img {
         height: 200px;
       }
+  .__detailsrestaurant{
+      .heart {
+      :nth-child(1) {
+        left: 300px;
+        top: -10px;
+      }
+      :nth-child(2) {
+        left: 300px;
+        top: -10px;
+              }
+            }
+         }
+      }
     }
   }
-}
+  @media (min-width: 540px) {
+    #location {
+      padding-right: 65px;
+    }
+  
+    #choice {
+      padding: 10% 12%;
+      .purpose {
+        padding: 0% 10%;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  
+  /* Style des blocs montrant les étapes de sélection */
+    #operation { 
+        margin-bottom: 15%;
+      .__action {
+        padding: 2% 2% 2% 0%;
+        margin-bottom: 1%;
+  
+      .__actionicon {
+        color: rgb(100, 100, 100);
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+  
+      .__actiontext {
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+  }
+    #restaurants-choice {
+      .restaurant-content {
+        img {
+          height: 200px;
+        }
+    .__detailsrestaurant{
+        .heart {
+        :nth-child(1) {
+          left: 400px;
+          top: -10px;
+        }
+        :nth-child(2) {
+          left: 400px;
+          top: -10px;
+                }
+              }
+           }
+       }
+    }
+  }
   /* Résolution horizontale de minimum 640px */
 @media (min-width: 640px) and (max-width: 719px) {
   header {
@@ -379,12 +460,12 @@
         }
         .heart {
           :nth-child(1) {
-            left: 480px;
+            left: 460px;
             top: -10px;
             font-size: 45px;
           }
           :nth-child(2) {
-            left: 480px;
+            left: 460px;
             top: -10px;
             font-size: 45px;
           }
@@ -432,7 +513,7 @@
       margin-bottom: auto;
     }
 
-    .actiontext {
+    .__actiontext {
       font-size: 25px;
       font-weight: 600;
       margin-left: 30px;
@@ -465,12 +546,12 @@
        }
         .heart {
           :nth-child(1) {
-            left: 480px;
+            left: 510px;
             top: -10px;
             font-size: 45px;
           }
           :nth-child(2) {
-            left: 480px;
+            left: 510px;
             top: -10px;
             font-size: 45px;
           }
@@ -491,7 +572,7 @@
     font-size: 35px;
   }
 
-  #__location {
+  #location {
     p {
       font-size: 1.4rem;
     }
@@ -680,7 +761,7 @@
     background-color: whitesmoke;
     padding: 50px;
     margin: 0px;
-    .__restaurants-title {
+    .__restaurantstitle {
       margin: 15% 5% 2%; /* @include title-style */
       padding: 0% 0% 0%;
       margin-top: 0px;

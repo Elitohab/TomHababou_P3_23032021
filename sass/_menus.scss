@@ -10,13 +10,13 @@
     height: fit-content;
     margin-bottom: 0%;
   }
-  .restaurant-first{
+  .restaurant-id{
     background-color: whitesmoke;
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .restaurant_name {
+    .restaurant-name {
       margin: 5%;
       margin-right: 0%;
       padding-top: 10px;
@@ -31,7 +31,7 @@
     font-size: 25px;
     }
   }
-
+ 
   .menu-type {
     background-color: whitesmoke;
     margin-top: 0%;
@@ -43,6 +43,7 @@
       padding-top: 5%;
       margin: 0% 5% 7% 4%;
     }
+
   .menu-block {
     position: relative;
     display: flex;
@@ -107,6 +108,7 @@
     transition: 0.5s ease;
     font-size: 15px;
     border-radius: 0px 15px 15px 0px;
+    z-index: 5;
     }
   }
 }
@@ -136,9 +138,9 @@
     .menu {
       padding-top: 45%;
     }
-    .restaurant-first {
+    .restaurant-id {
       height: 100px;
-      .restaurant_name {
+      .restaurant-name {
         margin-top: 20px;
         padding-top: 20px;
       }

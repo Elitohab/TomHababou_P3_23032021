@@ -1,15 +1,16 @@
-@import "_variables";
-@import "_mixins";
-@import "_fonts";
-@import "_header";
-@import "_footer";
-@import "_buttons";
-@import "_htmlbody";
-@import "_decorationtext";
-@import "_menus";
-@import "_keyframes";
-@import "_homepage";
-@import "_animations"; 
+@import "../sass/utils/variables";
+@import "../sass/utils/mixins";
+@import "../sass/utils/keyframes";
+@import "../sass/utils/animations"; 
+@import "../sass/base/fonts";
+@import "../sass/base/header";
+@import "../sass/base/footer";
+@import "../sass/base/buttons";
+@import "../sass/base/htmlbody";
+@import "../sass/base/decorationtext";
+@import "../sass/pages/menus";
+@import "../sass/pages/homepage";
+
  
 
 

@@ -3,11 +3,257 @@
 /* Animation variables */
 /* Variables des tailles */
 /* Mixins du site */
+/* Keyframes de l'animation de disparition de l'écran de chargement (page d'accueil) */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@-webkit-keyframes loading-screen-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loading-screen-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/* Keyframes de l'animation du spinner de chargement (page d'accueil) */
+@-webkit-keyframes spinner-rotation {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  90% {
+    -webkit-transform: rotate(350deg);
+            transform: rotate(350deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spinner-rotation {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  90% {
+    -webkit-transform: rotate(350deg);
+            transform: rotate(350deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.liste:nth-child(1) .liste__block:nth-of-type(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.liste:nth-child(1) .liste__block:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.liste:nth-child(1) .liste__block:nth-of-type(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.liste:nth-child(2) .liste__block:nth-of-type(1) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.liste:nth-child(2) .liste__block:nth-of-type(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.liste:nth-child(2) .liste__block:nth-of-type(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.liste:nth-child(3) .liste__block:nth-of-type(1) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.liste:nth-child(3) .liste__block:nth-of-type(2) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.liste:nth-child(3) .liste__block:nth-of-type(3) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+/* Keyframes de l'animation de la rotation du bouton retour (page menus) */
+@-webkit-keyframes return-rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes return-rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Propriétés de l'écran de chargement (page d'accueil) */
+.loading-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 80;
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  -webkit-animation: loading-screen-anim 500ms 2300ms both;
+          animation: loading-screen-anim 500ms 2300ms both;
+}
+
+/* Propriétés du spinner de chargement (page d'accueil) */
+.spinner {
+  height: 10vw;
+  width: 10vw;
+  border: 5px solid #9356dc;
+  border-top-color: #ff79da;
+  border-radius: 100%;
+  -webkit-animation: spinner-rotation 0.7s infinite ease 0.25s;
+          animation: spinner-rotation 0.7s infinite ease 0.25s;
+}
+
+/* Propriété du logo de l'écran de chargement (page d'accueil) */
+.loading-logo {
+  font-family: "Shrikhand";
+}
+
+.carte {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  overflow: hidden;
+}
+
+.carte__coeur {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.carte__coeur--plein {
+  background-image: linear-gradient(175deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+
+.carte__coeur:hover .carte__coeur--vide {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  opacity: 0;
+}
+
+.carte__coeur:hover .carte__coeur--plein {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 /* Import des polices utilisées pour le site web _fonts.scss */
 /* Shrikhand */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* Roboto */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 header {
   display: block;
   z-index: 0;
@@ -331,7 +577,7 @@ a {
   }
 }
 
-.menu__titre {
+.menu__name {
   font-family: "Shrikhand", "cursive";
   margin: 2px 0 0 0;
   font-weight: 600;
@@ -360,7 +606,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   border-radius: 0.75rem;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -471,171 +717,6 @@ a {
   padding-top: 30px;
   padding-bottom: 60px;
   background-color: whitesmoke;
-}
-
-/* Keyframes de l'animation de disparition de l'écran de chargement (page d'accueil) */
-@-webkit-keyframes loading-screen-anim {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes loading-screen-anim {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-/* Keyframes de l'animation du spinner de chargement (page d'accueil) */
-@-webkit-keyframes spinner-rotation {
-  0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  90% {
-    -webkit-transform: rotate(350deg);
-            transform: rotate(350deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spinner-rotation {
-  0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  90% {
-    -webkit-transform: rotate(350deg);
-            transform: rotate(350deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes slide-up {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-up {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.liste:nth-child(1) .liste__block:nth-of-type(1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.liste:nth-child(1) .liste__block:nth-of-type(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.liste:nth-child(1) .liste__block:nth-of-type(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.liste:nth-child(2) .liste__block:nth-of-type(1) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.liste:nth-child(2) .liste__block:nth-of-type(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.liste:nth-child(2) .liste__block:nth-of-type(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.liste:nth-child(3) .liste__block:nth-of-type(1) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.liste:nth-child(3) .liste__block:nth-of-type(2) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.liste:nth-child(3) .liste__block:nth-of-type(3) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-/* Keyframes de l'animation de la rotation du bouton retour (page menus) */
-@-webkit-keyframes return-rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes return-rotation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 /* Code spécifique à la page d'accueil */
@@ -1594,46 +1675,5 @@ a {
     left: 15vw;
     top: -10px;
   }
-}
-
-/* Propriétés de l'écran de chargement (page d'accueil) */
-.loading-screen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: fixed;
-  z-index: 80;
-  background-color: white;
-  width: 100vw;
-  height: 100%;
-  -webkit-animation: loading-screen-anim 500ms 2300ms both;
-          animation: loading-screen-anim 500ms 2300ms both;
-}
-
-/* Propriétés du spinner de chargement (page d'accueil) */
-.spinner {
-  height: 10vw;
-  width: 10vw;
-  border: 5px solid #9356dc;
-  border-top-color: #ff79da;
-  border-radius: 100%;
-  -webkit-animation: spinner-rotation 0.7s infinite ease 0.25s;
-          animation: spinner-rotation 0.7s infinite ease 0.25s;
-}
-
-/* Propriété du logo de l'écran de chargement (page d'accueil) */
-.loading-logo {
-  font-family: "Shrikhand";
 }
 /*# sourceMappingURL=main.css.map */

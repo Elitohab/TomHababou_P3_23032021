@@ -27,5 +27,43 @@
   .loading-logo {
     font-family: "Shrikhand";
   }
-  
-  
+
+  .carte {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    overflow:hidden;
+    &__coeur {
+    position:absolute;
+    right:30px;
+    top: 20px;
+    font-size:25px;
+    cursor: pointer;
+
+    &--plein{
+      background-image: linear-gradient(175deg, #ff79da, #9356dc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;     
+      opacity: 0; 
+      position:absolute;
+      right:0;
+      top:2px;
+    }
+    &:hover{
+
+      .carte__coeur--vide{
+        transition-duration: 1s;
+        opacity:0;
+      }
+
+      .carte__coeur--plein{
+        opacity:1;
+        transition-duration: 1s;
+      }
+    }      
+  }
+}
+

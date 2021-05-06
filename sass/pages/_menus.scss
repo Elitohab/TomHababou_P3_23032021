@@ -29,15 +29,13 @@
       }
 }
 
-    &__titre {
+    &__name {
       font-family: "Shrikhand", "cursive";
       margin: 2px 0 0 0;
       font-weight: 600;
       }
 }
 
-  
- 
   .liste {
     background-color: whitesmoke;
     margin-top: 0%;
@@ -56,7 +54,7 @@
       padding: 1rem;
       display: flex;
       border-radius: 0.75rem;
-      margin: 1rem 0;
+      margin: 1rem 1rem;
       box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
       overflow: hidden;
       cursor: pointer;
